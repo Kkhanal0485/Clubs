@@ -9,19 +9,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+class ViewController: UIViewController
+{
+    @IBOutlet var clubsTableView: UITableView!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of eany resources that can be recreated.
+        
     }
 
 
 }
 
-///// ANOTHER STUFF
+
