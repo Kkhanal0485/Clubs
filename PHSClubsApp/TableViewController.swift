@@ -20,7 +20,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         {
             
         }
-        
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
         {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
@@ -29,10 +28,10 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
             //cell.imageView.image = [indexPath.row]
             return cell
         }
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+        func prepare(for segue: UIStoryboardSegue, sender: Any?)
         {
             let nvc = segue.destination as! SecondViewController
-            let indexPath = seasonsTableView.indexPathForSelectedRow!
+            let indexPath = tableView.indexPathForSelectedRow!
             nvc.selectedSeason = seasonsArray[(indexPath.row)]
         }
     }
