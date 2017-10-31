@@ -15,6 +15,7 @@
 		213BA7C21F9F891F005E2ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 213BA7C01F9F891F005E2ABC /* LaunchScreen.storyboard */; };
 		213BA7CD1F9F891F005E2ABC /* PHSClubsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213BA7CC1F9F891F005E2ABC /* PHSClubsAppTests.swift */; };
 		213BA7D81F9F891F005E2ABC /* PHSClubsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213BA7D71F9F891F005E2ABC /* PHSClubsAppUITests.swift */; };
+		21D8472D1FA76F100097E3E9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D8472C1FA76F100097E3E9 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		213BA7D31F9F891F005E2ABC /* PHSClubsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHSClubsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		213BA7D71F9F891F005E2ABC /* PHSClubsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHSClubsAppUITests.swift; sourceTree = "<group>"; };
 		213BA7D91F9F891F005E2ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21D8472C1FA76F100097E3E9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				213BA7B41F9F891F005E2ABC /* AppDelegate.swift */,
 				213BA7B61F9F891F005E2ABC /* ViewController.swift */,
+				21D8472C1FA76F100097E3E9 /* TableViewController.swift */,
 				213BA7B81F9F891F005E2ABC /* Main.storyboard */,
 				213BA7BE1F9F891F005E2ABC /* Assets.xcassets */,
 				213BA7C01F9F891F005E2ABC /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 				213BA7BD1F9F891F005E2ABC /* PHSClubsApp.xcdatamodeld in Sources */,
 				213BA7B71F9F891F005E2ABC /* ViewController.swift in Sources */,
 				213BA7B51F9F891F005E2ABC /* AppDelegate.swift in Sources */,
+				21D8472D1FA76F100097E3E9 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
