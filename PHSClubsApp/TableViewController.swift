@@ -30,9 +30,9 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         func prepare(for segue: UIStoryboardSegue, sender: Any?)
         {
-            let nvc = segue.destination as! SecondViewController
-            let indexPath = tableView.indexPathForSelectedRow!
-            nvc.selectedSeason = seasonsArray[(indexPath.row)]
+            //let nvc = segue.destination as! SecondViewController
+            //let indexPath = tableView.indexPathForSelectedRow!
+            //nvc.selectedSeason = seasonsArray[(indexPath.row)]
         }
     }
     
