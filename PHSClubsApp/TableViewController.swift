@@ -16,6 +16,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     {
         super.viewDidLoad()
 
+    }
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
         {
             
@@ -28,13 +29,13 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
             //cell.imageView.image = [indexPath.row]
             return cell
         }
-        func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
         {
-            let nvc = segue.destination as! SecondViewController
-            let indexPath = tableView.indexPathForSelectedRow!
-            nvc.selectedSeason = seasonsArray[(indexPath.row)]
+            let nvc = segue.destination as! ViewController
+            let indexPath = clubTableVIew.indexPathForSelectedRow!
+            //                                                                                                                          nvc.selectedSeason = seasonsArray[(indexPath.row)]
         }
     }
     
 
-}
+
