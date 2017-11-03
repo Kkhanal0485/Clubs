@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		213BA7B51F9F891F005E2ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213BA7B41F9F891F005E2ABC /* AppDelegate.swift */; };
-		213BA7B71F9F891F005E2ABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213BA7B61F9F891F005E2ABC /* ViewController.swift */; };
 		213BA7BA1F9F891F005E2ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 213BA7B81F9F891F005E2ABC /* Main.storyboard */; };
 		213BA7BD1F9F891F005E2ABC /* PHSClubsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 213BA7BB1F9F891F005E2ABC /* PHSClubsApp.xcdatamodeld */; };
 		213BA7BF1F9F891F005E2ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213BA7BE1F9F891F005E2ABC /* Assets.xcassets */; };
@@ -38,7 +37,6 @@
 /* Begin PBXFileReference section */
 		213BA7B11F9F891F005E2ABC /* PHSClubsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHSClubsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		213BA7B41F9F891F005E2ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		213BA7B61F9F891F005E2ABC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		213BA7B91F9F891F005E2ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		213BA7BC1F9F891F005E2ABC /* PHSClubsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PHSClubsApp.xcdatamodel; sourceTree = "<group>"; };
 		213BA7BE1F9F891F005E2ABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				213BA7B41F9F891F005E2ABC /* AppDelegate.swift */,
-				213BA7B61F9F891F005E2ABC /* ViewController.swift */,
 				21D8472C1FA76F100097E3E9 /* TableViewController.swift */,
 				213BA7B81F9F891F005E2ABC /* Main.storyboard */,
 				213BA7BE1F9F891F005E2ABC /* Assets.xcassets */,
@@ -266,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				213BA7BD1F9F891F005E2ABC /* PHSClubsApp.xcdatamodeld in Sources */,
-				213BA7B71F9F891F005E2ABC /* ViewController.swift in Sources */,
 				213BA7B51F9F891F005E2ABC /* AppDelegate.swift in Sources */,
 				21D8472D1FA76F100097E3E9 /* TableViewController.swift in Sources */,
 			);
