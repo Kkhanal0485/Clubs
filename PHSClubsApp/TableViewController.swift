@@ -23,12 +23,12 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
 //    "desc": "Very fun! Make new friends!"
 
     var namesList = [String!]()
-//    var authorsList = [String!]()
-//    var sponsorList = [String!]()
-//    var locationList = [String!]()
-//    var timesList = [String!]()
-    var typesList = [String!]()
-//    var descsList = [String!]()
+    var authorList = [String!]()
+    var sponsorList = [String!]()
+    var locationList = [String!]()
+    var timeList = [String!]()
+    var typeList = [String!]()
+    var descList = [String!]()
     
     var arrayList: [String?] = []
     
@@ -43,6 +43,33 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let session = URLSession.shared.dataTask(with: url) { (data, response, error) in
                 if let JSONObject = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! NSDictionary
                 {
+                    self.namesList = [String]()
+                    let arrayList = JSONObject.object(forKey:"clubs") as! NSDictionary
+                    for index in 0..<arrayList.count
+                    {
+                        let clubsArray = arrayList[index]
+                        let clubName = (clubsArray as AnyObject!).object(forKey: "name")
+                        let clubAuthor = (clubsArray as AnyObject!).object(forKey: "author")
+                        let clubSponsor = (clubsArray as AnyObject!).object(forKey:"sponsor")
+                        let clubLocation = (clubsArray as AnyObject!).object(forKey: "location")
+                        let clubTime = (clubsArray as AnyObject!).object(forKey: "time")
+                        let clubType = (clubsArray as AnyObject!).object(forKey: "type")
+                        let clubDescription = (clubsArray as AnyObject!).object(forKey: "desc")
+                        
+                        self.namesList.append("\(clubName)")
+                        self.authorList.append("\(clubAuthor)")
+                        self.sponsorList.append("\(clubSponsor)")
+                        self.locationList.append("\(clubLocation)")
+                        self.timeList.append("\(clubTime)")
+                        self.typeList.append("\(clubType)")
+                        self.descList.append("\(clubDescription)")
+                    }
+                    OperationQueue.main.addOperation
+                        {
+                        self.clubsTableView.reloadData()
+                        }
+            }
+                session.resume()
         }
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
